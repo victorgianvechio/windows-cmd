@@ -1,7 +1,7 @@
 {
     "name": "windows-cmd",
     "version": "1.0.0",
-    "description": "Execute windows commands via code.",
+    "description": "Execute windows command via code.",
     "main": "./lib/win-cmd.js",
     "private": false,
     "bin": {

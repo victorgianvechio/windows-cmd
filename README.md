@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/victorgianvechio/windows-cmd.svg?branch=master)](https://travis-ci.org/victorgianvechio/windows-cmd)
 [![Dependency Status](https://david-dm.org/victorgianvechio/windows-cmd.svg)](https://david-dm.org/victorgianvechio/windows-cmd)
 
-Execute windows commands via code. All functions is _asynchronous_
+Execute windows command via code. All functions is _asynchronous_.
 
 **Table of content**
 
@@ -168,7 +168,7 @@ Result:
 
 _asynchronous function_
 
-Check if file/folder exists
+Copy file/folder
 
 -   {string} **filePath** - file path
 
@@ -218,7 +218,7 @@ try {
 
 _asynchronous function_
 
-Check if file/folder exists
+Extract .rar file
 
 -   {string} **filePath** - file path
 
@@ -236,7 +236,7 @@ try {
 
 _asynchronous function_
 
-Execute windows commands
+Execute windows command
 
 -   {string} **command** - cmd command
 
