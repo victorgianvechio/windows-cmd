@@ -8,6 +8,8 @@
 
 Execute windows command via code. All functions is _asynchronous_.
 
+If you have any question, issue or bug report feel free to ask.
+
 **Table of content**
 
 -   [Installation](#installation)
