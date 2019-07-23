@@ -18,7 +18,8 @@ If you have any question, issue or bug report feel free to ask.
     -   [checkEnv(variable)](#checkenvvariable)
     -   [checkEnvValue(variable, value)](#checkenvvaluevariable-value)
     -   [listEnvValues(variable)](#listenvvaluesvariable)
-    -   [setEnv(variable, value)](#setenvvariable-value)
+    -   [setSystemEnv(variable, value)](#setsystemenvvariable-value)
+    -   [setUserEnv(variable, value)](#setuserenvvariable-value)
     -   [checkFile(filePath, fileName)](#checkfilefilepath-filename)
     -   [listFile(folderPath)](#listfilefolderpath)
     -   [copyFile(filePath, toPath)](#copyfilefilepath-topath)
@@ -102,11 +103,11 @@ PATH=C:\Users\Desenvolvimento\bin;C:\Program Files\Git\usr\local\bin;C:\Program 
 PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 ```
 
-### setEnv(variable, value)
+### setSystemEnv(variable, value)
 
 _asynchronous function_
 
-Add a new value to the environment variable. If the variable does not exist it will be createds
+Add a new value to the **system** environment variable. If the variable does not exist it will be createds
 
 -   {string} **variable** - environment variable name
 
@@ -114,7 +115,25 @@ Add a new value to the environment variable. If the variable does not exist it w
 
 ```javascript
 try {
-    await cmd.setEnv('PATH', 'C\\Program Files (x86)\\myapp\\bin') // => true or false
+    await cmd.setSystemEnv('PATH', 'C\\Program Files (x86)\\myapp\\bin') // => true or false
+} catch (err) {
+    console.log(err.message) // => windows error
+}
+```
+
+### setUserEnv(variable, value)
+
+_asynchronous function_
+
+Add a new value to the **user** environment variable. If the variable does not exist it will be createds
+
+-   {string} **variable** - environment variable name
+
+-   {string} **value** - value of environment variable
+
+```javascript
+try {
+    await cmd.setUserEnv('PATH', 'C\\Program Files (x86)\\myapp\\bin') // => true or false
 } catch (err) {
     console.log(err.message) // => windows error
 }
