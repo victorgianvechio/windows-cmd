@@ -27,8 +27,8 @@ If you have any question, issue or bug report feel free to ask.
     -   [checkWinrar()](#checkwinrar)
     -   [winrarExtract(filePath, toPath)](#winrarextractfilepath-topath)
     -   [exec(command)](#execcommand)
--   [Changelog](changelog)
--   [License](license)
+-   [Changelog](#changelog)
+-   [License](#license)
 
 ---
 
